@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>True</Beta>
+  <Category>Network:Management Tools:</Category>
+  <Date>2016-09-06</Date>
+  <Name>ElasticSearch</Name>
+  <Description>
+    Elasticsearch is a search server based on Lucene. It provides a distributed, multitenant-capable full-text search engine with a RESTful web interface and schema-free JSON documents.
+  </Description>
+  <Overview>
+    Elasticsearch is a distributed, open source search and analytics engine, designed for horizontal scalability, reliability, and easy management. It combines the speed of search with the power of analytics via a sophisticated, developer-friendly query language covering structured, unstructured, and time-series data.  
+  </Overview>
+  <Project>https://www.elastic.co/</Project>
+  <Support></Support>
+  <Registry>https://hub.docker.com/_/elasticsearch/</Registry>
+  <GitHub>https://github.com/elastic/elasticsearch</GitHub>
+  <Repository>elastic/elasticsearch</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9200</HostPort>
+        <ContainerPort>9200</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9300</HostPort>
+        <ContainerPort>9300</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name></Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/elasticsearch</HostDir>
+      <ContainerDir>/etc/elasticsearch</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI></WebUI>
+  <Banner></Banner>
+  <Icon>https://static-www.elastic.co/assets/bltfdc1abb6ea9e2157/icon-elasticsearch.svg</Icon>
+  <ExtraParams></ExtraParams>
+</Containers>
