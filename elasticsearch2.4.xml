@@ -13,7 +13,7 @@
   <Project>https://www.elastic.co/</Project>
   <Support></Support>
   <Registry>https://hub.docker.com/_/elasticsearch/</Registry>
-  <GitHub>https://github.com/elastic/elasticsearch</GitHub>
+  <GitHub>https://github.com/docker-library/elasticsearch/tree/7a502275158cac1affa4372eab937a21913cd3e0/2.4</GitHub>
   <Repository>elastic/elasticsearch</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
