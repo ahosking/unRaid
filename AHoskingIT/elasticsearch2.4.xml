@@ -14,7 +14,7 @@
   <Support></Support>
   <Registry>https://hub.docker.com/_/elasticsearch/</Registry>
   <GitHub>https://github.com/docker-library/elasticsearch/tree/master/2.4</GitHub>
-  <Repository>elasticsearch</Repository>
+  <Repository>elasticsearch/2.4</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
