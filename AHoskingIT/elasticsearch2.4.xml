@@ -17,11 +17,31 @@
   <Repository>elasticsearch</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9200</HostPort>
+        <ContainerPort>9200</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>9300</HostPort>
+        <ContainerPort>9300</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/elasticsearch/data</HostDir>
       <ContainerDir>/usr/share/elasticsearch/data</ContainerDir>
-<!--      <Mode>rw</Mode> -->
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/elasticsearch/config</HostDir>
+      <ContainerDir>/usr/share/elasticsearch/config</ContainerDir>
+      <Mode>rw</Mode>
     </Volume>
   </Data>
   <WebUI></WebUI>
